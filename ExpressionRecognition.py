@@ -6,9 +6,10 @@ import os
 load_dotenv()
 
 api_key = os.getenv("API_KEY")
+endpoint_id = os.getenv("ENDPOINT_ID")
 
 # Enter your API Key
-endpoint_id = "39410ac4-f774-45cc-b42e-5d5a26c6991a"
+endpoint_id = endpoint_id
 api_key = api_key
 
 predictor = Predictor(endpoint_id, api_key=api_key)
